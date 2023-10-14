@@ -2,8 +2,8 @@
 A CLI application that generates truth tables for logical expressions
 
 ## How does it work?
-*It uses a simple Shunting Yard algorithm to parse the given expression and turns it into a set of RPN expressions. (Reversed Polish Notation)
-*Then it evaluates the given expression to generate the truth table.
+* It uses a simple Shunting Yard algorithm to parse the given expression and turns it into a set of RPN expressions. (Reversed Polish Notation)
+* Then it evaluates the given expression to generate the truth table.
 
 ## How do I use it?
 * It supports all the basic logical operators. namely,
