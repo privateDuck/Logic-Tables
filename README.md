@@ -16,4 +16,4 @@ A CLI application that generates truth tables for logical expressions
   * e.g: (a AND b) IMPL c ≡ a ∧ b ⇒ c
 * Please note that the operands must always be lowercase and operators must always be uppercase.
 
-  
+![alt text](https://github.com/privateDuck/Logic-Tables/blob/main/lgtb_prv.jpg "Logo Title Text 1")
