@@ -169,13 +169,13 @@ namespace LogicTables
 				{
 					if (operators.Count > 0)
 					{
-						while (token.left_assoc() && (token <= operators.Peek()) && operators.Peek().op != Operator.LP)
+						while (operators.Peek().is_operator() && (token.left_assoc() && token <= operators.Peek()) && operators.Peek().op != Operator.LP)
 						{
 							if (operators.Count == 0) break;
 							var o2_tkn = operators.Pop();
 							output.Push(o2_tkn);
 							if (operators.Count == 0) break;
-							if (!(token.left_assoc() && (token <= operators.Peek())))
+							if (!operators.Peek().is_operator() || !(token.left_assoc() && token <= operators.Peek()) || operators.Peek().op == Operator.LP)
 							{
 								break;
 							}

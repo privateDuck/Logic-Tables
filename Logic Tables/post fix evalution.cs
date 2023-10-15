@@ -143,7 +143,7 @@ namespace LogicTables
 					argument = !stack.Pop();
 					stack.Push(argument);
 					string arg_name = name_stack.Pop();
-					name_stack.Push("~" + arg_name.Trim());
+					name_stack.Push("~(" + arg_name.Trim() + ")");
 				}
 			}
 			expr = name_stack.Pop().PadLeft(2).PadRight(2);
